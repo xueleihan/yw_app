@@ -1,0 +1,19 @@
+{
+  "index.html": {
+    "resources": [
+      "/dist/index.css",
+      "dist/fonts/iconfont.css",
+      "/dist/index.js",
+      "/dist/bundle.js",
+      "dist/fonts/iconfont.woff",
+      "dist/index.js",
+      "dist/bundle.js",
+      "dist/index.css",
+      "src/images/person_1.png",
+      "src/images/level_01.png",
+      "src/images/logo.png",
+      "src/images/banner_1.png",
+      "src/images/loading.png"
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+@import "./libs/public.less";
+
+.wrap{
+    width: 100%;
+    // height: 1144/@r;
+    height: 85.4%;
+    overflow: hidden;
+    position: absolute;
+    top: 1.8rem;
+    left: 0;
+    background-color: #fff;
+}
+header {
+    height: 1.8rem;
+    background-color: #F29926;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    .header-left,
+    .header-right {
+        flex: 1;
+
+        a {
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+
+            i {
+                font-size: 36/@r;
+                flex: 1;
+            }
+
+            span {
+                font-size: 22/@r;
+                flex: 1;
+            }
+        }
+    }
+
+    .header-center {
+        flex: 5;
+        input {
+            width: 9rem;
+            height: 60/@r;
+            border: 1px solid #ddd;
+            border-radius: 1rem;
+            padding-left: 0.6rem;
+            font-size: 0.6rem;
+            position: relative;
+            padding-right: 1.4rem;
+            &::placeholder{
+                color: #acacac;
+            }
+        }
+        i{
+            position: absolute;
+            right: 2.54rem;
+            top: 0.36rem;
+            font-size: 1rem;
+            color: #acacac;
+            font-weight: 600;
+        }
+    }
+}

@@ -1,0 +1,81 @@
+@import "./libs/public.less";
+
+.login-user{
+    width: 100%;
+    height: 82/@r;
+    margin-top: 76/@r;
+    span{
+        width: 226/@r;
+        height: 82/@r;
+        line-height: 82/@r;
+        font-size: 0.6rem;
+        color: #000;
+        text-align: right;
+        float: left;
+        padding-right: 0.6rem;
+    }
+    input{
+        width: 404/@r;
+        height: 78/@r;
+        border: 1px solid #ddd;
+        font-size: 0.6rem;
+    }
+}
+.login-pwd{
+    width: 100%;
+    height: 82/@r;
+    margin-top: 43/@r;
+    span{
+        width: 226/@r;
+        height: 82/@r;
+        line-height: 82/@r;
+        font-size: 0.6rem;
+        color: #000;
+        text-align: right;
+        float: left;
+        padding-right: 0.6rem;
+    }
+    input{
+        width: 404/@r;
+        height: 78/@r;
+        border: 1px solid #ddd;
+        font-size: 0.6rem;
+    }
+}
+.login-btn{
+    width: 100%;
+    height: 82/@r;
+    margin-top: 70/@r;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    a{
+        display: inline-block;
+        width: 263/@r;
+        height: 80/@r;
+        line-height: 80/@r;
+        text-align: center;
+        font-size: 34/@r;
+        background-color: #c2c2c2;
+        color: #fff;
+        &:nth-child(2){
+            background-color: #7cc623;
+        }
+    }
+}
+@media (max-height: 400px) {
+  .login-find {
+    display: none;
+  }
+}
+.login-find{
+    position: absolute;
+    bottom: 42/@r;
+    left: 44/@r;
+
+    a{
+        font-size: 0.6rem;
+        color: #464646;
+    }
+}

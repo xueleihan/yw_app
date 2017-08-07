@@ -1,0 +1,135 @@
+@import "./libs/public.less";
+
+.task-head {
+    height: 80/@r;
+    width: 100%;
+    text-align: center;
+    font-size: 28/@r;
+    color: #464646;
+    background-color: #F8F8F5;
+
+    div{
+        line-height: 80/@r;
+        height: 80/@r;
+        float: left;
+
+        i {
+            font-size: 0.63rem;
+        }
+    }
+    a {
+        line-height: 80/@r;
+        height: 80/@r;
+        float: left;
+        color: #464646;
+
+        i {
+            font-size: 0.63rem;
+        }
+        &:nth-of-type(1) {
+            width: 180/@r;
+        }
+        &:nth-of-type(2) {
+            width: 150/@r;
+        }
+        &:nth-of-type(3) {
+            width: 150/@r;
+        }
+        &:nth-of-type(4) {
+            width: 150/@r;
+        }
+        &:nth-of-type(5) {
+            width: 120/@r;
+        }
+    }
+
+    .task-active {
+        color: #f29926;
+    }
+}
+
+.task-item {
+    height: 205/@r;
+    width: 15rem;
+    font-size: 0.56rem;
+
+    .am-list-line {
+        &:after{
+            display: block;
+            position: absolute;
+            content: '';
+            left: 0;
+            bottom: 0;
+            right: auto;
+            top: auto;
+            width: 100%;
+            border-bottom: 1PX solid #ddd;
+        }
+    }
+    .am-list-brief {
+        padding-left: 30/@r;
+        width: 100%;
+        &:nth-of-type(1){
+            b {
+                float: left;
+                color: #464646;
+                font-size: 0.56rem;
+            }
+            span{
+                   padding-right: '0.25rem';
+                   color: #464646;
+                   font-size: 0.56rem;
+                   float: right;
+            }
+        }
+
+    }
+}
+
+.demo-thead {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    .place-head {
+        height: 70/@r;
+        line-height: 70/@r;
+        width: 700/@r;
+        background-color: #EBEBEB;
+        font-size: 24/@r;
+        color: #636363;
+        padding-left: 1rem;
+        z-index: 21;
+    }
+}
+
+.place-list {
+    padding: 30/@r 30/@r 0.9rem;
+
+    .place-list-top {
+        margin-bottom: 10/@r;
+    }
+
+    .am-tag,
+    .am-tag-normal {
+        height: auto;
+        margin: 0.23rem;
+        width: 2.9rem;
+    }
+
+    .am-button {
+        width: 303/@r;
+        height: 71/@r;
+        line-height: 71/@r;
+        margin: 0.4rem;
+    }
+}
+.am-refresh-control-pull,.am-refresh-control-release{
+    span{
+        font-size: 0.6rem;
+    }
+}

@@ -1,0 +1,53 @@
+@import "./libs/public.less";
+
+.grid{
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 19rem;
+    padding-bottom: 3.5rem;
+    box-sizing: border-box;
+    .grid-item{
+        width: 33%;
+        height: 335/@r;
+        float: left;
+        font-size: 0;
+        .total{
+            color: #e55725;
+        }
+        .business{
+            height: 40/@r;
+            display: block;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        div{
+            width: 210/@r;
+            float: right;
+            height: 40/@r;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            color: #464646;
+            font-size: 0.5rem;
+            .level{
+                width: 77/@r;
+                height: 40/@r;
+            }
+            &:nth-of-type(1){
+                height: 176/@r;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 133/@r;
+                    height: 133/@r;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+}
